@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Canvas 3</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="300"
+      height="200"
+      style="border: 1px solid #000"
+    ></canvas>
+    <script>
+      const c = document.getElementById("myCanvas");
+      const ctx = c.getContext("2d");
+      ctx.font = "20px Arial";
+      ctx.fillText("Hello, Canvas!", 50, 100);
+
+      ctx.beginPath();
+      ctx.strokeStyle = "red";
+      ctx.lineWidth = 4;
+      ctx.arc(30, 30, 50, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.fillStyle = "blue";
+      ctx.arc(270, 30, 50, 0, 2 * Math.PI);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.fillStyle = "blue";
+      ctx.fillRect(60, 150, 150, 100);
+      ctx.lineWidth = 2;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Specifity Pada ID</title>
+
+    <style>
+      #ini-id {
+        color: lightgreen;
+        background-color: blue;
+      }
+
+      .ini-class {
+        background-color: red;
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="ini-id" class="ini-class">
+      ID Memiliki Specifity lebih besar dibandingkan class
+    </h1>
+
+    <!-- h1 diatas akan memiliki warna Lightgreen dengan Background Blue, sesuai dengan style yang diberikan pada ID -->
+    <!-- Hal ini disebabkan karena ID memiliki speficity lebih besar dibandingkan class -->
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contoh script</title>
+  </head>
+  <body>
+    <h1 id="h1">Belum diklik!</h1>
+    <button id="button">Klik Saya!</button>
+
+    <script>
+      document.getElementById("button").addEventListener("click", function () {
+        document.getElementById("h1").innerHTML = "Sudah diklik!";
+      });
+    </script>
+  </body>
+</html>

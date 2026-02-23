@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h2>Form Pendaftaran Siswa Baru</h2>
+    <p>Silakan isi form di bawah ini untuk mendaftar sebagai siswa baru.</p>
+    <form action="">
+      <div style="border: 1.75px grey solid; border-radius: 3px; padding: 1rem">
+        <h2
+          style="
+            position: absolute;
+            transform: translateY(-40px);
+            font-size: medium;
+            background-color: white;
+            padding: 0 0.5rem;
+          "
+        >
+          Identitas Siswa
+        </h2>
+        <label for="nisn">NISN:</label> <br />
+        <input type="text" id="nisn" name="nisn" /><br />
+        <br />
+        <label for="name">Nama Lengkap:</label> <br />
+        <input type="text" id="name" name="name" required /> <br />
+        <br />
+        <label for="gender">Jenis Kelamin:</label> <br />
+        <select id="gender" size="1" required>
+          <option value="" disabled selected>Pilih Jenis Kelamin</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+        <br /><br />
+        <label for="birthplace">Tempat Lahir:</label> <br />
+        <input
+          type="text"
+          id="birthplace"
+          name="birthplace"
+          placeholder="Kabupaten/Kota"
+          required
+        />
+        <br />
+        <br />
+        <label for="birthdate">Tanggal Lahir:</label> <br />
+        <input type="date" id="birthdate" name="birthdate" required /> <br />
+      </div>
+      <br />
+      <div style="border: 1.75px grey solid; border-radius: 3px; padding: 1rem">
+        <h2
+          style="
+            position: absolute;
+            transform: translateY(-40px);
+            font-size: medium;
+            background-color: white;
+            padding: 0 0.5rem;
+          "
+        >
+          Alamat
+        </h2>
+        <label for="address">Alamat Lengkap:</label> <br />
+        <textarea
+          id="address"
+          name="address"
+          rows="3"
+          cols="35"
+          placeholder="Jalan, RT/RW, Desa/Kelurahan, Kecamatan, Kabupaten/Kota"
+          required
+        ></textarea>
+        <br />
+        <label for="postal code">Kode pos</label> <br />
+        <input type="text" id="postal code" name="postal code" required />
+        <br />
+      </div>
+      <br />
+      <div style="border: 1.75px grey solid; border-radius: 3px; padding: 1rem">
+        <h2
+          style="
+            position: absolute;
+            transform: translateY(-40px);
+            font-size: medium;
+            background-color: white;
+            padding: 0 0.5rem;
+          "
+        >
+          Kontak
+        </h2>
+        <label for="email">Email:</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="contoh@domain.com"
+          required
+        />
+        <br />
+        <br />
+        <label for="phone">No. Telepon/HP:</label> <br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="08123456789"
+          required
+        />
+        <br />
+      </div>
+      <br />
+      <div style="border: 1.75px grey solid; border-radius: 3px; padding: 1rem">
+        <h2
+          style="
+            position: absolute;
+            transform: translateY(-40px);
+            font-size: medium;
+            background-color: white;
+            padding: 0 0.5rem;
+          "
+        >
+          Pendidikan Sebelumnya
+        </h2>
+        <label for="previous-school">Asal Sekolah:</label> <br />
+        <input
+          type="text"
+          id="previous-school"
+          name="previous-school"
+          required
+        />
+        <br />
+        <br />
+        <label for="graduation-year">Tahun Lulus:</label> <br />
+        <select id="graduation-year" size="1">
+          <option value="" disabled selected>Pilih Tahun Lulus</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+        </select>
+      </div>
+      <br />
+      <div style="border: 1.75px grey solid; border-radius: 3px; padding: 1rem">
+        <h2
+          style="
+            position: absolute;
+            transform: translateY(-40px);
+            font-size: medium;
+            background-color: white;
+            padding: 0 0.5rem;
+          "
+        >
+          Data Orang Tua/Wali
+        </h2>
+        <label for="parent-name">Nama Orang Tua/Wali:</label> <br />
+        <input type="text" id="parent-name" name="parent-name" required />
+        <br /><br />
+        <label for="parents-jobs">Pekerjaan Orang Tua/Wali:</label> <br />
+        <input type="text" id="parents-jobs" name="parents-jobs" required />
+        <br /><br />
+        <label for="parents-contact">No. Telepon/HP Orang Tua/Wali:</label>
+        <br />
+        <input
+          type="tel"
+          id="parents-contact"
+          name="parents-contact"
+          placeholder="08123456789"
+          required
+        />
+        <br />
+      </div>
+      <br />
+      <div style="border: 1.75px grey solid; border-radius: 3px; padding: 1rem">
+        <h2
+          style="
+            position: absolute;
+            transform: translateY(-40px);
+            font-size: medium;
+            background-color: white;
+            padding: 0 0.5rem;
+          "
+        >
+          Lampiran
+        </h2>
+        <label for="photo">Foto 3x4 :</label> <br />
+        <input type="file" id="photo" name="photo" accept=".pdf,image/*" />
+        <br /><br />
+        <label for="transcript">scan Akta Kelahiran/ Ijazah :</label> <br />
+        <input
+          type="file"
+          id="transcript"
+          name="transcript"
+          accept=".pdf,.doc,.docx,image/*"
+        />
+      </div>
+      <br />
+      <div style="border: 1.75px grey solid; border-radius: 3px; padding: 1rem">
+        <h2
+          style="
+            position: absolute;
+            transform: translateY(-40px);
+            font-size: medium;
+            background-color: white;
+            padding: 0 0.5rem;
+          "
+        >
+          pernyataan
+        </h2>
+        <input type="checkbox" id="agreement" name="agreement" required />
+        <label for="agreement"
+          >Saya menyatakan bahwa data yang diberikan adalah benar.</label
+        >
+      </div>
+      <br />
+      <input type="submit" value="Kirim Pendaftaran" />
+      <input type="reset" value="Reset Form" />
+    </form>
+  </body>
+</html>

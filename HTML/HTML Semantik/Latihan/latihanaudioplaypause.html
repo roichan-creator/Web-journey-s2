@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video</title>
+  </head>
+  <body>
+    <h2>Lagu Horor</h2>
+    <audio id="myAudio" src="/HTML/HTML Semantik/media penting/contoh.mp3" controls></audio>
+    <br />
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <button onclick="stopAudio()">Stop</button>
+    <script>
+      function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+      }
+      function pauseAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.pause();
+      }
+      function stopAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+  </body>
+</html>
