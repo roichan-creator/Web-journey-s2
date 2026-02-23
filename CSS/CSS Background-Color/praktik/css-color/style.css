@@ -1,0 +1,42 @@
+.nama-warna {
+  color: red;
+}
+
+.rgb {
+  color: rgb(0, 128, 255);
+}
+
+.rgba {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.hsl {
+  color: hsl(120, 100%, 30%);
+}
+
+.hsla {
+  background-color: hsla(200, 100%, 50%, 0.4);
+}
+
+.hex {
+  color: #ff00ff;
+}
+
+.box {
+  border: 3px solid rgb(0, 255, 0);
+}
+
+.transparan {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 15px
+}
+
+.palet {
+  background-color: hsl(300, 80%, 70%);
+  padding: 10px;
+}
+
+.gradien {
+  background: linear-gradient(to right,  #0000ff, #ff0000);
+}

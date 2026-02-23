@@ -1,0 +1,18 @@
+.kotak1 {
+  border: 3px solid red;
+  padding: 10px;
+  margin: 10px;
+}
+
+.kotak2 {
+  border: 3px dashed red;
+  padding: 10px;
+  margin: 10px;
+}
+
+.kotak3 {
+  border: 3px solid red;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+}

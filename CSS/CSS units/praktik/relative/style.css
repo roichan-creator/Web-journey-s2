@@ -1,0 +1,38 @@
+.container {
+  width: 50%;
+  height: 100px;
+  background-color: lightcoral;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+.text-blok {
+  font-size: 2em;
+  width: max-content;
+  background-color: lightseagreen;
+  color: white;
+  padding: 10px;
+}
+.html {
+  font-size: 2rem;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  padding: 10px;
+  width: max-content;
+}
+.h1 {
+  font-size: 5vw;
+  background-color: lightpink;
+  color: black;
+  padding: 10px;
+  width: max-content;
+}
+.icon {
+  font-size: 10vmin;
+  background-color: lightslategray;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  width: max-content;
+}

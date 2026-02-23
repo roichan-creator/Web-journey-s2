@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+header {
+  border: 1px solid silver;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 16px;
+}
+article {
+  border: 1px solid silver;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 16px;
+}
+footer {
+  border: 1px solid silver;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 45px;
+}

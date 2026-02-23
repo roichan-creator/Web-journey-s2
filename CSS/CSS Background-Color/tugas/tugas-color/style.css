@@ -1,0 +1,105 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .color-box {
+            height: 250px;
+            border-radius: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .color-box:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .color-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+        }
+
+        .color-info {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .color-info h3 {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .color-info .format {
+            color: #666;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            .palette-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .color-box {
+                height: 220px;
+            }
+        }
