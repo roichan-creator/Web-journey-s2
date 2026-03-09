@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: navy;
+        color: white;
+      }
+      header {
+        margin-bottom: 2em;
+        text-align: center;
+      }
+      article {
+        border: 1px solid silver;
+        border-radius: 0.8em;
+        padding: 1em;
+        margin-bottom: 1em;
+        background-color: #e30118;
+      }
+      .action-buttons {
+        margin-top: 1.5em;
+      }
+      .action-buttons button {
+        display: inline;
+        margin-right: 1em;
+        padding: 0.5em 1em;
+        border-radius: 0.8em;
+        border: 1px solid silver;
+      }
+      footer {
+        font-size: small;
+        margin-top: 6em;
+        text-align: center;
+      }
+      .container {
+        background-color: red;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        padding: 24px 32px;
+        display: flex;
+        gap: 40px;
+      }
+
+      .column {
+        flex: 1;
+      }
+
+      .column h3 {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 0 12px 0;
+        text-align: center;
+      }
+      .column ul {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 13px;
+        line-height: 1.8;
+      }
+      .fotoprofile {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .profile-header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #e30118;
+      }
+
+      #foto-profile {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #e30118;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Profil Saya</h1>
+      <p>Foto saya</p>
+      <div></div>
+    </header>
+    <div class="fotoprofile">
+      <div class="profile-header">
+        <img
+          id="foto-profile"
+          src="ROICHANARYSHAPUTRA.jpg"
+          alt="Foto Profile"
+        />
+        <h1 style="color: #e30118; margin: 10px 0">Roichan Aryshaputra</h1>
+        <p style="color: #7f8c8d; font-style: italic">Pelajar</p>
+      </div>
+    </div>
+    <article>
+      <p>
+        Saya adalah seorang siswa SMK Negeri 1 Kandeman kelas X PPLG 1. Memiliki
+        minat besar dalam pengembangan web dan ingin terus belajar teknologi
+        terbaru untuk meningkatkan kemampuan diri.Selain itu saya juga memiliki
+        minat terhadap Matematika saya juga memiliki impian untuk mengikuti
+        lomba Matematika tingkat Nasional.
+      </p>
+      <div class="action-buttons">
+        <button>&#x1F44D; Like</button>
+        <button>&#128552; Comment</button>
+        <button>&#xF16D; Share</button>
+      </div>
+    </article>
+    <article>
+      <p>
+        Seorang pelajar SMK jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)
+        adalah siswa yang mempelajari cara membuat dan mengembangkan perangkat
+        lunak, aplikasi, serta gim. Mereka belajar bahasa pemrograman, logika
+        komputer, dan desain aplikasi melalui teori dan praktik di komputer.
+        Jurusan ini menuntut kemampuan berpikir logis, ketelitian, dan
+        kreativitas dalam bidang teknologi.
+      </p>
+      <div class="action-buttons">
+        <button>&#x1F44D; Like</button>
+        <button>&#128552; Comment</button>
+        <button>&#xF16D; Share</button>
+      </div>
+    </article>
+    <div class="container">
+      <div class="column">
+        <h3>Skill</h3>
+        <ul>
+          <li>HTML (Beginner)</li>
+          <li>CSS (Beginner)</li>
+          <li>C# (Beginner)</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Pengalaman</h3>
+        <ul>
+          <li>Mengikuti Coding Camp (Progresif class)</li>
+          <li>Mengikuti OSN Matematika</li>
+          <li>Membuat Aplikasi sederhana</li>
+        </ul>
+      </div>
+    </div>
+    <footer>Copyright &copy; X PPLG</footer>
+  </body>
+</html>
